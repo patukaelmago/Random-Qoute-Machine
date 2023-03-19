@@ -1,8 +1,6 @@
 import { useEffect, useState } from 'react';
 import './App.css';
-import 'bootstrap/dist/css/bootstrap.min.css'; 
-
-
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
   const [quoteInfo, setQuoteInfo] = useState({});
@@ -39,7 +37,7 @@ function App() {
       <div className={darkMode ? 'dark' : 'light'}>
         <div id="title">
           <h1>Random Quote Machine</h1>
-          <button className='dm' onClick={toggleDarkMode}>{darkMode ? <i className="bi bi-lamp bi-3x"></i> : <i className="bi bi-lamp-fill bi-3x"></i> }</button>
+          <button className='dm' onClick={toggleDarkMode}>{darkMode ? <i className="bi bi-lamp bi-3x"></i> : <i className="bi bi-lamp-fill bi-3x"></i>}</button>
         </div>
         <div id="wrapper">
           <div id="quote-box">
@@ -53,7 +51,7 @@ function App() {
               {quoteInfo.author}
             </p>
             <div className="buttons">
-            <button  className='butt' id="new-quote" onClick={getQuote}>
+              <button className='butt' id="new-quote" onClick={getQuote}>
                 New Quote
               </button>
               <a
@@ -68,9 +66,9 @@ function App() {
               >
                 <i className="fa fa-twitter "></i>
               </a>
-              
+
             </div>
-            
+
           </div>
         </div>
         <footer id="footer">
