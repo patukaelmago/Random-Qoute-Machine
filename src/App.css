@@ -7,8 +7,6 @@
   vertical-align: baseline;
 }
 
-
-
 div {
   position: relative;
   z-index: 2;
@@ -24,8 +22,6 @@ body {
   align-items: center;
   height: 100vh;
 }
-
-
 
 .footer {
   width: 450px;
@@ -123,7 +119,6 @@ h1 {
   font-weight: bold  !important;
   text-align: center !important;
   margin-top: 1em  !important;
-  
 }
 
 h5 {
@@ -183,8 +178,6 @@ h5 {
   
   color: #1da1f2;
 }
-
-
 
 .light #title {
 
