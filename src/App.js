@@ -71,9 +71,9 @@ function App() {
 
           </div>
         </div>
-        <footer id="footer">
-          <h5>by Patricio Uskaer with React and ❤️</h5>
-        </footer>
+        {/* <footer id="footer">
+         <h5>by Patricio Uskaer with React and ❤️</h5>
+        </footer> */}
       </div>
     </div>
   );
