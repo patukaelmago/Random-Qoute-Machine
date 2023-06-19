@@ -14,7 +14,6 @@ div {
 
 body {
   background-color: #2e2c2c !important;
-  color: #1270aa;
   font-family: 'Raleway', sans-serif;
   font-weight: 400;
   display: flex;
@@ -55,7 +54,7 @@ a {
   clear: both;
   font-weight: 500;
   font-size: 1.75em;
-  color: #1270aa;
+  color: #cc1634;
 }
 
 i {
@@ -84,10 +83,12 @@ button {
   height: 38px;
   border: none;
   border-radius: 3px;
-  color: #ede4e4c8;
-  background-color: #1270aa;
+  color: black;
+  background-color: #84cc16;
+  
   outline: none;
   font-size: 0.85em;
+  font-weight: 500;
   padding: 8px 18px 6px 18px;
   margin-top: 30px;
   opacity: 1;
@@ -130,7 +131,7 @@ h5 {
 .fa-twitter {
   font-size: 3em;
   margin-bottom: 0.5em;
-  color: #1270aa;
+  color: #84cc16;
 }
 
 .fa-twitter:hover {
@@ -176,7 +177,7 @@ h5 {
 
 .light {
   
-  color: #1da1f2;
+  color: #5d9011;
 }
 
 .light #title {
@@ -185,52 +186,62 @@ h5 {
 }
 
 .light .quote-text {
-  color: #1da1f2;
+  color: #579101;
 }
 
 .light .quote-author {
   color: #333;
 }
 
-.light .buttons button {
+/* .light .buttons button {
   background-color: #1da1f2;
   color: #f21dc7;
-}
+} */
 
 .light #new-quote {
-  background-color: #1da1f2;
+  background-color: #36f614;
   color: #333;
 }
 
 .light h1 {
-  color: #1da1f2;
+  color: #579101;
 }
 
 .light button {
-  background-color: #1da1f2;
+  background-color: #579101;
   color: #ffffff;
 }
 
 .light a:hover {
-  color: #1da1f2;
+  color: #579101;
 }
 
 .light #quote-box {
   background-color: rgb(255, 255, 255);
-  color: #333;
+  
   min-height: 200px;
 }
 
 .light .fa-twitter {
-  color: #1da1f2;
+  color: #579101;
 }
 
 .dark {
-  color: #1270aa;
+  color: #aaaa12;
 }
 
 .dark #title {
-  color: #1270aa;
+  color: #84cc16;
 }
 
-
+.quote {
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(
+      150px,
+      1fr
+    )
+  );
+  gap: 16px;
+}

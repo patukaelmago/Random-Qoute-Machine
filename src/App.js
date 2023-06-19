@@ -1,10 +1,16 @@
 import { useEffect, useState } from 'react';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import { useMediaQuery } from 'react-responsive';
 
 function App() {
   const [quoteInfo, setQuoteInfo] = useState({});
   const [darkMode, setDarkMode] = useState(false);
+
+  const isMobile = useMediaQuery({ maxWidth: 767 });
+const isTablet = useMediaQuery({ minWidth: 768, maxWidth: 991 });
+const isDesktop = useMediaQuery({ minWidth: 992 });
+
 
   useEffect(() => {
     getQuote();
@@ -33,7 +39,8 @@ function App() {
   };
 
   return (
-    <div className='container'>
+    <div className='quote'>
+    <div className={isMobile ? 'mobile' : isTablet ? 'tablet' : 'desktop'}>
       <div className={darkMode ? 'dark' : 'light'}>
         <div id="title">
           <h1>Random Quote Machine</h1>
@@ -75,6 +82,7 @@ function App() {
          <h5>by Patricio Uskaer with React and ❤️</h5>
         </footer> */}
       </div>
+    </div>
     </div>
   );
 }
