@@ -44,10 +44,18 @@ function App() {
         <div id="title" className="container flex flex-col p-8 items-center gap-8 ">
           
           <button className='bg-lime-500 p-2 rounded-md mt-2' onClick={toggleDarkMode}>{darkMode ? <i className="bi bi-lamp bi-3x"></i> : <i className="bi bi-lamp-fill bi-3x"></i>}</button>
-          <h2  className="title text-gray-900 font-bold text-2xl">Random Quote Machine</h2>
+          <h2  className="title text-gray-900 font-bold text-2xl bg-lime-500 p-2 rounded-md w-full text-center">Random Quote Machine</h2>
         </div>
         <div id="wrapper" className='border-2 border-lime-500 rounded-md m-2'>
+           <div className="buttons text-center m-4 ">
+              <button className='butt mr-4 text-xl bg-lime-500 rounded-md p-2 font-semibold' id="new-quote" onClick={getQuote}>
+                New Quote
+              </button>
+              
+
+            </div>
           <div id="quote-box " className='bg-lime-500 rounded-md m-2'>
+            
             <div className="quote-text text-center  m-2 p-2 font-medium" id="text">
               <span></span>
               <i className="fa fa-quote-left"></i>
@@ -59,13 +67,7 @@ function App() {
             </p>
             </div>
 
-            <div className="buttons text-center m-4 ">
-              <button className='butt mr-4 text-xl bg-lime-500 rounded-md p-2' id="new-quote" onClick={getQuote}>
-                New Quote
-              </button>
-              
-
-            </div>
+           
             <div className='text-center '>
             <a
                 title="Tweet this quote!"
