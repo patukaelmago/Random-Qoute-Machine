@@ -43,24 +43,30 @@ function App() {
       <div className={darkMode ? 'dark' : 'light'}>
         <div id="title" className="container flex flex-col p-8 items-center gap-8">
           <h2  className="title text-yellow-500 font-bold text-2xl">Random Quote Machine</h2>
-          <button className='dm' onClick={toggleDarkMode}>{darkMode ? <i className="bi bi-lamp bi-3x"></i> : <i className="bi bi-lamp-fill bi-3x"></i>}</button>
+          <button className='bg-sky-500 p-2 rounded-md' onClick={toggleDarkMode}>{darkMode ? <i className="bi bi-lamp bi-3x"></i> : <i className="bi bi-lamp-fill bi-3x"></i>}</button>
         </div>
         <div id="wrapper">
-          <div id="quote-box">
-            <div className="quote-text text-center bg-white rounded-lg m-2 p-2" id="text">
+          <div id="quote-box " className='bg-white rounded-md m-2'>
+            <div className="quote-text text-center  m-2 p-2 font-medium" id="text">
               <span></span>
               <i className="fa fa-quote-left"></i>
               <span></span>
               {quoteInfo.text}
             </div>
-            <p className="quote-author" id="author">
+            <p className="quote-author text-right mr-4 text-sky-600 text-lg font-semibold" id="author">
               {quoteInfo.author}
             </p>
-            <div className="buttons">
-              <button className='butt' id="new-quote" onClick={getQuote}>
+            </div>
+
+            <div className="buttons text-center m-4 ">
+              <button className='butt mr-4 text-2xl bg-green-500 rounded-md p-2' id="new-quote" onClick={getQuote}>
                 New Quote
               </button>
-              <a
+              
+
+            </div>
+            <div className='text-center '>
+            <a
                 title="Tweet this quote!"
                 href={
                   'https://twitter.com/intent/tweet?hashtags=quotes&related=freecodecamp&text=' +
@@ -69,13 +75,13 @@ function App() {
                 target="_blank"
                 rel="noreferrer"
                 id="tweet-quote"
+                
               >
-                <i className="fa fa-twitter "></i>
+                <i className="fa fa-twitter text-4xl"></i>
               </a>
+              </div>
 
-            </div>
-
-          </div>
+          
         </div>
         {/* <footer id="footer">
          <h5>by Patricio Uskaer with React and ❤️</h5>
