@@ -44,7 +44,7 @@ function App() {
         <div id="title" className="container flex flex-col p-8 items-center gap-8 ">
           
           <button className='bg-lime-500 p-2 rounded-md mt-2' onClick={toggleDarkMode}>{darkMode ? <i className="bi bi-lamp bi-3x"></i> : <i className="bi bi-lamp-fill bi-3x"></i>}</button>
-          <h2  className="title text-gray-900 font-bold text-2xl bg-lime-500 p-2 rounded-md w-full text-center">Random Quote Machine</h2>
+          <h2  className="title text-gray-900 font-bold text-2xl  p-2 rounded-md w-full text-center">Random Quote Machine</h2>
         </div>
         <div id="wrapper" className='border-2 border-lime-500 rounded-md m-2'>
            <div className="buttons text-center m-4 ">
@@ -59,6 +59,7 @@ function App() {
             <div className="quote-text text-center  m-2 p-2 font-medium" id="text">
               <span></span>
               <i className="fa fa-quote-left"></i>
+              
               <span></span>
               {quoteInfo.text}
             </div>
