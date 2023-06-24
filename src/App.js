@@ -69,7 +69,13 @@ function App() {
             </div>
 
            
-            <div className='text-center '>
+            
+
+            
+
+          
+        </div>
+        <div className='text-center '>
             <a
                 title="Tweet this quote!"
                 href={
@@ -84,12 +90,7 @@ function App() {
                 <i className="fa fa-twitter text-4xl text-sky-500"></i>
               </a>
               </div>
-
-            
-
-          
-        </div>
-          <p className="text-sm mb-md-0 text-center mt-10">
+          <p className="text-sm mb-md-0 text-center mt-6">
           &copy; {new Date().getFullYear()} - Patuka Technologies
           <br /> All rights reserved.
         </p>
