@@ -38,15 +38,15 @@ function App() {
   };
 
   return (
-    <div className='h-screen flex flex-col items-center bg-white'>
+    <div className='h-screen flex flex-col items-center bg-white '>
     
       <div className={darkMode ? 'dark' : 'light'}>
-        <div id="title" className="container flex flex-col p-8 items-center gap-8">
+        <div id="title" className="container flex flex-col p-8 items-center gap-8 ">
           
-          <button className='bg-lime-500 p-2 rounded-md' onClick={toggleDarkMode}>{darkMode ? <i className="bi bi-lamp bi-3x"></i> : <i className="bi bi-lamp-fill bi-3x"></i>}</button>
+          <button className='bg-lime-500 p-2 rounded-md mt-4' onClick={toggleDarkMode}>{darkMode ? <i className="bi bi-lamp bi-3x"></i> : <i className="bi bi-lamp-fill bi-3x"></i>}</button>
           <h2  className="title text-gray-900 font-bold text-2xl">Random Quote Machine</h2>
         </div>
-        <div id="wrapper">
+        <div id="wrapper" className='border-2 border-lime-500 rounded-md m-2'>
           <div id="quote-box " className='bg-lime-500 rounded-md m-2'>
             <div className="quote-text text-center  m-2 p-2 font-medium" id="text">
               <span></span>
@@ -78,17 +78,18 @@ function App() {
                 id="tweet-quote"
                 
               >
-                <i className="fa fa-twitter text-4xl"></i>
+                <i className="fa fa-twitter text-4xl text-sky-500"></i>
               </a>
               </div>
 
-              <p className="text-sm mb-md-0">
-          &copy; {new Date().getFullYear()} - Patuka Technologies.
-          <br /> Todos los derechos reservados.
-        </p>
+            
 
           
         </div>
+          <p className="text-sm mb-md-0 text-center mt-10">
+          &copy; {new Date().getFullYear()} - Patuka Technologies
+          <br /> All rights reserved.
+        </p>
         {/* <footer id="footer">
          <h5>by Patricio Uskaer with React and ❤️</h5>
         </footer> */}
