@@ -1,15 +1,13 @@
 import { useEffect, useState } from 'react';
-import './App.css';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import { useMediaQuery } from 'react-responsive';
+// import './App.css';
+
+
 
 function App() {
   const [quoteInfo, setQuoteInfo] = useState({});
   const [darkMode, setDarkMode] = useState(false);
 
-  const isMobile = useMediaQuery({ maxWidth: 767 });
-const isTablet = useMediaQuery({ minWidth: 768, maxWidth: 991 });
-const isDesktop = useMediaQuery({ minWidth: 992 });
+
 
 
   useEffect(() => {
@@ -23,6 +21,7 @@ const isDesktop = useMediaQuery({ minWidth: 992 });
     document.body.classList.add('dark');
   } else {
     document.body.classList.remove('dark');
+    document.body.classList.remove('light');
   }
 
   const getQuote = () => {
@@ -39,16 +38,16 @@ const isDesktop = useMediaQuery({ minWidth: 992 });
   };
 
   return (
-    <div className='quote'>
-    <div className={isMobile ? 'mobile' : isTablet ? 'tablet' : 'desktop'}>
+    <div className='h-screen flex flex-col items-center bg-red-500'>
+    
       <div className={darkMode ? 'dark' : 'light'}>
-        <div id="title">
-          <h1>Random Quote Machine</h1>
+        <div id="title" className="container flex flex-col p-8 items-center gap-8">
+          <h2  className="title text-yellow-500 font-bold text-2xl">Random Quote Machine</h2>
           <button className='dm' onClick={toggleDarkMode}>{darkMode ? <i className="bi bi-lamp bi-3x"></i> : <i className="bi bi-lamp-fill bi-3x"></i>}</button>
         </div>
         <div id="wrapper">
           <div id="quote-box">
-            <div className="quote-text" id="text">
+            <div className="quote-text text-center bg-white rounded-lg m-2 p-2" id="text">
               <span></span>
               <i className="fa fa-quote-left"></i>
               <span></span>
@@ -82,7 +81,7 @@ const isDesktop = useMediaQuery({ minWidth: 992 });
          <h5>by Patricio Uskaer with React and ❤️</h5>
         </footer> */}
       </div>
-    </div>
+    
     </div>
   );
 }
