@@ -87,10 +87,10 @@ function App() {
                 id="tweet-quote"
                 
               >
-                <i className="fa fa-twitter text-4xl text-sky-500"></i>
+                <i className="fa fa-twitter text-4xl text-sky-500 mt-2"></i>
               </a>
               </div>
-          <p className="text-sm mb-md-0 text-center mt-6">
+          <p className="text-sm mb-md-0 text-center mt-2">
           &copy; {new Date().getFullYear()} - Patuka Technologies
           <br /> All rights reserved.
         </p>
