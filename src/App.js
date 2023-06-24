@@ -42,8 +42,9 @@ function App() {
     
       <div className={darkMode ? 'dark' : 'light'}>
         <div id="title" className="container flex flex-col p-8 items-center gap-8">
-          <h2  className="title text-yellow-500 font-bold text-2xl">Random Quote Machine</h2>
+          
           <button className='bg-sky-500 p-2 rounded-md' onClick={toggleDarkMode}>{darkMode ? <i className="bi bi-lamp bi-3x"></i> : <i className="bi bi-lamp-fill bi-3x"></i>}</button>
+          <h2  className="title text-gray-900 font-bold text-2xl">Random Quote Machine</h2>
         </div>
         <div id="wrapper">
           <div id="quote-box " className='bg-white rounded-md m-2'>
