@@ -58,7 +58,7 @@ function App() {
             
             <div className="quote-text text-center  m-2 p-2 font-medium" id="text">
               <span></span>
-              <i className="fa fa-quote-left"></i>
+              <i className="fa fa-quote-left mr-1"></i>
               
               <span></span>
               {quoteInfo.text}
