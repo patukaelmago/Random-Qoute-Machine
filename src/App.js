@@ -44,11 +44,11 @@ function App() {
         <div id="title" className="container flex flex-col p-2 items-center gap-4 ">
           
           <button className='bg-lime-500 p-2 rounded-md mt-2  shadow-md border-gray-900' onClick={toggleDarkMode}>{darkMode ? <i className="bi bi-lamp bi-3x"></i> : <i className="bi bi-lamp-fill bi-3x"></i>}</button>
-          <h2  className="title  font-bold text-2xl bg-gray-900  p-2 rounded-md w-full text-white text-center">Random Quote Machine<i class="bi bi-chat-quote-fill ml-2"></i></h2>
+          <h2  className="title  font-bold text-2xl bg-gray-900 border-1 shadow-md p-2 rounded-md w-full text-white text-center">Random Quote Machine<i class="bi bi-chat-quote-fill ml-2"></i></h2>
         </div>
-        <div id="wrapper" className='border-2 border-gray-900 rounded-md m-2 bg-lime-500'>
+        <div id="wrapper" className='border-1  rounded-md m-2 bg-lime-500 shadow-md'>
            <div className="buttons text-center m-4 ">
-              <button className='butt mr-4 text-lg bg-gray-900 rounded-md p-2 font-semibold text-lime-500' id="new-quote" onClick={getQuote}>
+              <button className='butt mr-4 text-md bg-gray-900 rounded-md p-2 font-semibold text-lime-500' id="new-quote" onClick={getQuote}>
                 New Quote
               </button>
               
