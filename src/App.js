@@ -87,7 +87,7 @@ function App() {
                 id="tweet-quote"
                 
               >
-                <i className="fa fa-twitter text-4xl text-sky-500 mt-2"></i>
+                <i className="fa fa-twitter text-4xl text-sky-500 mt-2 "><p className='text-sm'>Share on Twitter!</p></i>
               </a>
               </div>
           <p className="text-sm mb-md-0 text-center mt-2">
