@@ -1,189 +1,43 @@
-/* @import url('https://fonts.googleapis.com/css?family=Raleway:400,500');
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,500');
 
-* {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  vertical-align: baseline;
-}
-
-div {
-  position: relative;
-  z-index: 2;
-}
-
-body {
-  background-color: #2e2c2c ;
-  font-family: 'Raleway', sans-serif;
-  font-weight: 400;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-}
-
-.footer {
-  width: 450px;
-  text-align: center;
-  display: block;
-  margin: 15px auto 30px auto;
-  font-size: 0.8em;
-}
-
-a {
-  font-weight: 500;
-  margin-bottom: 1em;
-  text-decoration: none;
-}
-
-#quote-box {
-  border-radius: 3px;
-  position: relative;
-  margin: 8% auto auto auto;
-  width: 200px;
-  padding: 40px 50px;
-  display: table;
-  background-color: #212122;
-  
-}
-
-.quote-text {
-  text-align: center;
-  width: 450px;
-  height: auto;
-  clear: both;
-  font-weight: 500;
-  font-size: 1.75em;
-  color: #cc1634;
-}
-
-i {
-  font-size: 1em;
-  margin-right: 0.4em;
-  margin-bottom: 1em;
-}
-
-.quote-author {
-  width: 450px;
-  height: auto;
-  clear: both;
-  padding-top: 20px;
-  font-size: 1em;
-  text-align: right;
-  color: #ede4e4c8;
-  margin-bottom: 50px;
-}
-
-.buttons {
-  width: 450px;
-  margin: auto;
-  display: block;
-}
-
-button {
-  height: 38px;
-  border: none;
-  border-radius: 3px;
-  color: black;
-  background-color: #84cc16;
-  
-  outline: none;
-  font-size: 0.85em;
-  font-weight: 500;
-  padding: 8px 18px 6px 18px;
-  margin-top: 30px;
+button{
   opacity: 1;
-  cursor: pointer;
 }
 
 button:hover {
   opacity: 0.9;
 }
 
-#tweet-quote,
-#tumblr-quote {
-  float: left;
-  padding: 0px;
-  padding-top: 8px;
-  text-align: center;
-  font-size: 1.2em;
-  margin-right: 5px;
-  height: 30px;
-  width: 40px;
-}
 
-#new-quote {
-  float: right;
-}
 
-h1 {
-  font-size: 2em  !important;
-  font-weight: bold  !important;
-  text-align: center !important;
-  margin-top: 1em  !important;
-}
 
-h5 {
-  text-align: center;
-  margin-top: 1em;
-  color: #aa1282 ;
-}
 
-.fa-twitter {
-  font-size: 3em;
-  margin-bottom: 0.5em;
-  color: #84cc16;
-}
+
 
 .fa-twitter:hover {
   opacity: 0.9;
 }
 
-.quote-author h5 {
-  font-family: 'Raleway', sans-serif;
-  font-weight: 400;
-  font-size: 0.8em;
-}
 
-#title {
-  position: fixed;
-  top: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  z-index: 1;
-}
 
-#title {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
 
-.darkmode {
-  margin-right: 5em;
-}
 
-.dm {
-  margin-left: 5em;
-  margin-top: 2em;
-}
-
-#footer {
-  position: fixed;
-  bottom: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  z-index: 1;
-}
 
 .light {
   
-  color: #5d9011;
+  color: #631144;
+}
+.light #back {
+  background-color: #333;
+}
+body.dark {
+  background-color: #430974 !important;
 }
 
-.light #title {
+.light #container {
 
   color: #d6bf10 ;
+  background-color: #333;
 }
 
 .light .quote-text {
@@ -200,7 +54,7 @@ h5 {
 }
 
 .light #new-quote {
-  background-color: #36f614;
+  background-color: #f61414;
   color: #333;
 }
 
@@ -231,47 +85,7 @@ h5 {
   color: #579101;
 }
 
-.dark {
-  color: #aaaa12;
-}
-
-.dark #title {
-  color: #84cc16;
-}
-
-.quote {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background-color: #d6bf10;
-  padding-bottom: 100%;
-}
- */
 
 
 
 
- * {
-  text-decoration: none ;
-}
-
-.App {
-  text-align: center;
-  background-color: #282c34;
-}
-
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-body {
-  background-color: rgb(19, 29, 59);
-}
